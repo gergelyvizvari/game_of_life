@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Game Of Life</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">        
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>        
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <span class="navbar-brand">Game Of Life</span>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">    
+        <div class="btn btn-default navbar-btn" onclick="game.resetMap();">Render</div>
+        <div class="btn btn-default navbar-btn" onclick="game.start()">Start</div>
+        <div class="btn btn-default navbar-btn" onclick="game.stop()">Stop</div>        
+        <div class="btn btn-default navbar-btn" onclick="game.nextStep()">Next</div>
+        <div class="row">
+            <canvas id="golCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+        </div>
+    </div>
+    <br>    
+    <footer class="navbar" style="margin-bottom:0px !important;">
+        <div class="container">            
+            <div class="navbar-text pull-right">            
+                <a href="gdoki.co.uk">&copy; Gergely Vizvari</a> 2015
+            </div>
+        </div>
+    </footer>    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
